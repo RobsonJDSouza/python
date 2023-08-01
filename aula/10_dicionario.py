@@ -16,26 +16,26 @@ São mutável
 #     ]
 # }
 
-# # print(cadastro['id'])
-# # print(cadastro['compra'][0])
-# # print(cadastro['compra'][0]['produto'])
-# # print(f'cadastro["compra"][0]["produto"]') #usando F-string com aspas simples, terei que informar o conteúdo do dicionário com as aspas duplas.
+# print(cadastro['id'])
+# print(cadastro['compra'][0])
+# print(cadastro['compra'][0]['produto'])
+# print(f'cadastro["compra"][0]["produto"]') #usando F-string com aspas simples, terei que informar o conteúdo do dicionário com as aspas duplas.
 
-# # METODO GET
-# # filhos_get = cadastro.get('filhos') 
-# # print(filhos_get)
-# # altura_get = cadastro.get('altura', None)#com o parametro none, caso passei um informação errada, o get trata o erro trazendo o resultado none.
-# # print(altura_get)
+########## METODO GET ##########
+# filhos_get = cadastro.get('filhos') 
+# print(filhos_get)
+# altura_get = cadastro.get('altura', None)#com o parametro none, caso passei um informação errada, o get trata o erro trazendo o resultado none.
+# print(altura_get)
 
-# #ACRESCENTANDO OU MODIFICANDO DADOS
-# # cadastro['nome'] = 'Ana' #aqui eu modifiquei 
-# # cadastro['idade'] = 40   #aqui eu acrescentei
-# # print(cadastro)
+######### ACRESCENTANDO OU MODIFICANDO DADOS ##########
+# cadastro['nome'] = 'Ana' #aqui eu modifiquei 
+# cadastro['idade'] = 40   #aqui eu acrescentei
+# print(cadastro)
 
-# # cadastro.update({'idade': 39, 'nome' : 'Robson'}) #pode atualizar mais de uma informação 
-# # print(cadastro)
+# cadastro.update({'idade': 39, 'nome' : 'Robson'}) #pode atualizar mais de uma informação 
+# print(cadastro)
 
-# # EXCLUIR
+########## EXCLUIR ##########
 # del cadastro['nome']
 # print(cadastro)
 
@@ -48,12 +48,13 @@ São mutável
 # cadastro.clear() #exclui todos os itens do dicionário
 # print(cadastro)
 
-# METODOS DO DICIONÁRIO
-familia = {
-    'pai': 'Robson',
-    'mae': 'Ana',
-    'filha': 'Sofia'
-}
+########## METODOS DO DICIONÁRIO ##########
+# familia = {
+#     'pai': 'Robson',
+#     'mae': 'Ana',
+#     'filha': 'Sofia'
+# }
+
 
 # copia_familia = familia.copy()
 # print(copia_familia)
@@ -79,4 +80,4 @@ familia = {
 chaves = ['Robson', 'Ana']
 valor = 0
 familia1 = dict.fromkeys(chaves, valor)
-print(familia1)
+print(type(familia1))
