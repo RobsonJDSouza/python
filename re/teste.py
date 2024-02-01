@@ -1,17 +1,13 @@
+def soma (*num):
+    resultado = 0
+    for numeros in num:
+        resultado += numeros
+    return resultado
+
+soma_tudo = soma(1,1)
+print(soma_tudo)
+
 '''
-Classe - É um model para construção de um objeto
-Objeto
-    Atributo == Que coisas eu tenho? 
-    Metodo == Que coisas eu faço 
-    Estado == Qual o meu estado atual 
-
-Encapsulamento - Isolar/esconder dados em Classes, evitando acesso externo
-Abstração - Características que o usuário não precisa saber
-Herança - É o pilar da POO que permite que Classes derivem de outras Classes para aproveitar e reutilizar código.
-Polimorfismo - Caracteristica que métodos possuem de ssumir várias(poli) formas(morfismo)
- 
-
-
 Observaçõe da aula
 
 self.nome -- é um atributo.
