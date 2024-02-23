@@ -70,12 +70,27 @@ return - Palavra reservada do que queremos retornar
 # soma_tudo = soma(1,1)
 # print(soma_tudo)
 
-def nome (n, **outros_nomes):
-    print(f'{n}')
-    print(f'{outros_nomes}')
-    for nome, valor in outros_nomes.items():
-            print({nome}, {valor})
+# def nome (n, **outros_nomes):
+#     print(f'{n}')
+#     print(f'{outros_nomes}')
+#     for nome, valor in outros_nomes.items():
+#             print({nome}, {valor})
 
-nome (n = 'Robson', nome = 'Sofia', nome_1 = 'Ana')
+# nome (n = 'Robson', nome = 'Sofia', nome_1 = 'Ana')
 
+#Aula 01/02/2024
+def monta_computador(cpu, memoria, hd, monitor= 4, **outros_atributos): 
+#cpu, memoria e hd são parametros da função
+#Paramentros com valores. Acrescentado o monitor com o valor
+#Colocar varios atributos. Acrescentado 2 asterisco com parametros da função. Teremos um dicionario na chamada.
+    print('Informações do computador')
+    print(f"CPU: {cpu}, Memoria: {memoria}, HD: {hd}, Tela {monitor}")
+    print(f"outros_atributos: ")
 
+    for chave, valor in outros_atributos.items():
+        print(f'{chave}: {valor}')
+
+# monta_computador(1, 2, 3) #Argumento posicional
+# monta_computador(hd=1, memoria=2, cpu=3) #Argumento nomeados
+# monta_computador(hd=1, memoria=2, cpu=3, monitor= 4) #Troque o valor do argumento monitor
+monta_computador(1, 2, 3, monitor= 4, mouse= 5, note= 6) 
