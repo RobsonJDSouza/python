@@ -21,11 +21,13 @@ São mutável
 # print(cadastro['compra'][0]['produto'])
 # print(f'cadastro["compra"][0]["produto"]') #usando F-string com aspas simples, terei que informar o conteúdo do dicionário com as aspas duplas.
 
+
 ########## METODO GET ##########
 # filhos_get = cadastro.get('filhos') 
 # print(filhos_get)
 # altura_get = cadastro.get('altura', None)#com o parametro none, caso passei um informação errada, o get trata o erro trazendo o resultado none.
 # print(altura_get)
+
 
 ######### ACRESCENTANDO OU MODIFICANDO DADOS ##########
 # cadastro['nome'] = 'Ana' #aqui eu modifiquei 
