@@ -64,10 +64,8 @@ arq = open("/robson/python/teste/arquivo.csv", "r")
 # arquivo.close() #Todo arquivo aberto tem que ser fechado para não corrompe-lo
 
 
-
-
-
-with open('./aula/relatorio.csv', 'r') as arquivo_entrada:
+arquivo_resultado = []
+with open("./relatorio.csv", "r") as arquivo_entrada:
 #with - gerenciado de contexto. Não precisa fechar o arquivo no final
 #as - alias “pseudônimo”, “apelido” para o arquivo  
     linhas = arquivo_entrada.readlines()[1:] 
@@ -75,8 +73,9 @@ with open('./aula/relatorio.csv', 'r') as arquivo_entrada:
     # [1:] como o arquivo é uma lista retirei o cabeçalho
     for linha in linhas:
         dados = linha.split(',')
-        arquvivo_resultado.append(f'{dados[1]}, {dados[2]}')
+        email = {dados[3].replace("\n", "")}
+        arquivo_resultado.append(f'{dados[1]} {dados[2]},{email}\n')
 
-with open('./aula/arquivo_saida.csv', 'w') as arquivo_de_saida:
-    for resultado in arquvivo_resultado:
+with open('./arquivo_saida.csv', 'w') as arquivo_de_saida:
+    for resultado in arquivo_resultado:
         arquivo_de_saida.write(resultado) 
