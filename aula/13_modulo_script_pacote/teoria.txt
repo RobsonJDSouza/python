@@ -1,4 +1,4 @@
-'''
+
 Script:
 Um arquivo Python (.py) que contém código executável.
 É a unidade básica de execução em Python.
@@ -19,4 +19,3 @@ Exemplo: pacote_de_ferramenta
 __init__
 Iremos mostrar para o python que a pasta é um pacote
 
-'''
