@@ -1,0 +1,12 @@
+Gerenciado de pacote Python externo.
+Ele acessa o PY PI (Python Pakage Index) onde temos todos os pacotes.
+https://pypi.org/
+
+COMANDOS
+
+pip --version
+pip --help 
+pip install pandas
+
+
+                
