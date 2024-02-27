@@ -1,0 +1,30 @@
+Isola o ambiente de desenvolvimento
+Obs. O PIP tem que estar instalado nas variáveis de ambiente
+
+https://docs.python.org/pt-br/3/tutorial/venv.html
+
+virtualenv --version
+pip list
+pip --help
+pip instal django ==3.1 
+
+CRIAR AMBIENTE VIRTUAL
+Criar a env - virtualenv {{nome da pasta. Geralmente colocamos como env/venv }}
+    python -m venv tutorial-env
+
+Ativar a env (comando para ativar a env. Comando é executado na raiz do projeto)
+    source tutorial-env/bin/activate
+
+Desativando a env (Comando para desativar a env)
+    deactivate
+
+
+Para trocar a versão do Python em uma virtualenv no Linux
+pyenv install {{versão desejada}}
+virtualenv -p ~/.pyenv/versions/3.10.12/bin/python env_2
+
+Outra forma
+python3 -m venv activate
+python3 -m pip install python==3.10.12
+
+                
