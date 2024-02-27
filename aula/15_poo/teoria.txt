@@ -1,0 +1,33 @@
+
+Classe - É um model para construção de um objeto
+Objeto
+    Atributo == Que coisas eu tenho? 
+    Metodo == Que coisas eu faço 
+    Estado == Qual o meu estado atual 
+
+PILARES DA POO
+- Encapsulamento - Isolar/esconder dados em Classes, evitando acesso externo
+- Abstração - Características que o usuário não precisa saber
+- Herança - É o pilar da POO que permite que Classes derivem de outras Classes para aproveitar e reutilizar código.
+- Polimorfismo - Caracteristica que métodos possuem de ssumir várias(poli) formas(morfismo)
+ 
+
+
+Observaçõe da aula
+
+self.nome -- é um atributo.
+def __init__(self, nome, cpf, salario, cargo): -- Construtor
+Podemos criar varias classes em arquivo diferente. depois importamos
+@ - anotetion
+
+Caso tenhamos um getter, teremos um setter. Caso não tenhamos, diremos que não queremos a modificação ex CPF
+getter - devolva um valor
+    @property
+    def nome(self):
+        return self.nome
+
+setter - setar um valor
+    @nome.setter
+    def nome(self, novoNome)
+        self.__nome = novoNome
+

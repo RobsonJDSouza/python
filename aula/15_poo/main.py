@@ -1,37 +1,32 @@
+class Celular:
+    def __init__(self, fabricante, modelo, tela, armazenamento, memoria, camera, bateria, tela_ligada ) -> None:
+        self.fabricante = fabricante
+        self.modelo = modelo
+        self.tela = tela
+        self.armazenamento = armazenamento
+        self.memoria = memoria
+        self.camera = camera
+        self.bateria = bateria
+        self.tela_ligada = tela_ligada
+
+    def ligar_tela(self):
+        self.tela_ligada = True
+
+celular_android = Celular("Sansung", "S10", 6.25, 128, 4, 21, 3400, False)
+celular_iphone = Celular(fabricante="Apple", modelo="iPhone 13 Pro", tela=6.25, armazenamento=128, memoria=4, camera=16, bateria=3400, tela_ligada= False)
+
+celular_iphone.ligar_tela()
+
+print(celular_iphone.tela_ligada)
+
+
+
+
+
+
+
 '''
-Classe - É um model para construção de um objeto
-Objeto
-    Atributo == Que coisas eu tenho? 
-    Metodo == Que coisas eu faço 
-    Estado == Qual o meu estado atual 
-
-Encapsulamento - Isolar/esconder dados em Classes, evitando acesso externo
-Abstração - Características que o usuário não precisa saber
-Herança - É o pilar da POO que permite que Classes derivem de outras Classes para aproveitar e reutilizar código.
-Polimorfismo - Caracteristica que métodos possuem de ssumir várias(poli) formas(morfismo)
- 
-
-
-Observaçõe da aula
-
-self.nome -- é um atributo.
-def __init__(self, nome, cpf, salario, cargo): -- Construtor
-Podemos criar varias classes em arquivo diferente. depois importamos
-@ - anotetion
-
-se tivermos um getter teremos um setter. Caso não tenhamos, diremos que não queremos a modificação ex CPF
-getter - devolva um valor
-    @property
-    def nome(self):
-        return self.nome
-
-setter - setar um valor
-    @nome.setter
-    def nome(self, novoNome)
-        self.__nome = novoNome
-
-***************************
-class Pessoa:     
+Class Pessoa:     
     def __init__(self, nome, cpf, salario, cargo):
         self.nome = nome
         self.cpf = cpf
@@ -76,15 +71,13 @@ funcionario1 = Pessoa("Robson", "32699630845", "100000.00", "gerente")
 print(funcionario1.nome)
 funcionario1.nome Robson Souza
 
-'''
 
 #Exercício proposto
-'''
 Crie uma classe chamada "ContaBancaria" que represente uma conta bancária simples com as seguintes características:
 Atributos: número da conta (int), titular da conta (string), saldo (float).
 Esses atributos devem ser privados, e você deve fazer os getters e setters conforme necessário. Considere que o número da conta não pode ser alterado após a criação, mas titular e saldo sim.
 
-'''
+
 
 class ContaBancaria:
     def __init__(self, id, nome, saldo):
@@ -120,3 +113,5 @@ try:
 
 except AttributeError:
         print("Erro de Atributo") 
+
+'''

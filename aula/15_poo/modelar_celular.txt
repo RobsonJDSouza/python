@@ -1,0 +1,17 @@
+Classe Celular:
+    Atributos:
+        fabricante: string
+        modelo: string
+        tela: decimal
+        armazenamento: inteiro
+        memoria: inteiro
+        camera: inteiro
+        bateria: inteiro
+        tela_ligada: boleano
+    Metodo:
+        ligar_tela()
+        salvar_em_disco()
+        carregar_aplicativo()
+        tirar_foto()
+        verificar_carga_bateria()
+        
