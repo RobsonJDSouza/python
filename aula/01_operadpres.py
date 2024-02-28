@@ -30,3 +30,7 @@ print('Divião é {:.1f}'.format(d)) #Coloca a quantidade de casas decimais na d
 print('Robson' , end=' ') #A funnão end coloca nesse caso, os prints na mesma linha
 print('Souza')
 print('Robson \nJosé \nde \nSouza') #A função \n, ela faz pular uma linha
+
+
+# \t - Tabulação
+# \n - Pula uma linha

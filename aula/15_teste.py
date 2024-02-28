@@ -1,26 +1,20 @@
-'''
-MANIPULANDO LISTA
-teste = ["Robson", "Ana", "Sofia"]
-teste_atual = []
-for lista in teste:
-    teste_atual.append(lista.upper().split())
+cadastro = {
+    'id': 1,
+    'nome': 'Robson',
+    'filhos':['Sofia'],
+    'compra':[           # Compras é um dicionário dentro de uma lista
+        {   
+            'id': 19,
+            'produto': 'tenis',
+            'preço': 299.00
+        },
 
-primeira = teste_atual[0]
-print(primeira)
-'''
+        {   
+            'id': 19,
+            'produto': 'roupa',
+            'preço': 299.00
+        }
+    ]
+}
 
-'''
-MANIPULAÇÃO DE ARQUIVO
-texto = 'Robson'
-arquivo = open('./aula/aula_python.csv','w')
-arquivo.write(texto)
-
-arquivo = open('./aula/aula_python.csv', 'r')
-retorno = arquivo.read()
-print(retorno)
-
-texto = '\n Ana'
-arquivo = open('./aula/aula_python.csv','a')
-arquivo.write(texto)
-'''
-print('Robson')
+print(f"Robson comprou um {cadastro['compra'][1]['produto']}")
