@@ -2,7 +2,7 @@
 
 numero1 = input('Digite um número: ')
 numero2 = input('Digite um número: ')
-print('Digite um operaçao:\n\t+ para some\n\t- para subtraçao\n\t* para multipliaçao\n\t/ para divisao')
+print('Digite um operaçao:\n\t+ para soma\n\t- para subtraçao\n\t* para multipliaçao\n\t/ para divisao')
 
 operacao = input('Digite um operador: ')
 
