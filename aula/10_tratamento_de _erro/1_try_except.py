@@ -16,15 +16,15 @@ try:
     resultado = dividindo_dois_numeros(numero_1, numero_2)
 
 
-except ZeroDivisionError as execao:  #podemos dar uma Alias para veerificar excelção ocorreu.
-    print(f'Não pode fazer divisão por zero {execao}')
-
 except NameError:
     print('Verificar os nomes das variáveis') 
 
 except (TypeError, IndentationError):  #Tratar duas exceções juntas
     print('Erro de tipo ou indentação')
 
+except ZeroDivisionError as execao:  #podemos dar uma Alias para veerificar excelção ocorreu.
+    print(f'Não pode fazer divisão por zero {execao}')
+    
 else:
     print(f'Valor da divisão é {resultado}')
 
