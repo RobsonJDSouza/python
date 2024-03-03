@@ -1,0 +1,80 @@
+= 1 - Introdução à jornada
+#F01 #F02
+
+= 2 - Primeiros passos no Python
+#F03 - Lógica de Programação
+#F04 - Introdução à linguagem Python
+#F05 - instalação do Python no Linux e MacOS
+#F06 - Instalação do Python no Windows
+#F07 - Editor de código vc, IDE
+#F08 - A IDE PyCharm
+#F09 - Interpretador Python 
+#F10 - Seu primeiro código
+
+= 3 - Variáveis e tipos de dados
+#F11 - O que é variável
+#F12 - Tipos de dados simples
+
+= 4 - Dominando strings
+#F13 - Introdução ao Módulos
+#F14 - String em Python
+#F15 - Formatação de strings com Format
+#F16 - Forma tação de strings com F-strings
+#F17 - Métodos de strings
+#F18 - Índice de String
+
+= 5 - Dominando tipos numéricos
+#F19 - Tipos e operações numéricas
+#F20 - Conversão de tipos
+#F21 - Tratamento de tipos numéricos
+#F22 - Import e módilo Math
+
+= 6 - Entrada de dados e usuários
+#F23 - A Função INout
+#F24 - Contruíndo uma calculadora
+
+= 7 - Estruturas de controle
+#F25 - Estrutura de controle 
+#F26 - Estruturas condicionais
+#F27 - Operadores
+#F28 - Estrutura de repetição Form
+#F29 - Estrutura de repetição While
+
+= 8 - Dominando Listas
+#F30 #F31 #F32 #F33 #F34 #F35
+
+= 9 - Dominando Dicionários
+#F36 #F37 #F38 #F39 #F40 #F41
+
+= 10 - Dominando Sets e Tuplas
+#F42 #F43 #F44 #F45 #F46
+
+= 11 - Funções em Python
+#F47 #F48 #F49 #F50 #F51 #F52
+
+= 12 - Tratamento de erros
+#F53 #F54 #F55 #F56
+
+= 13 - Manipulação de arquivos
+#F57 #F58 #F59
+
+= 14 - Módulos Python e o PIP
+#F60 #F61 #F62 #F63
+
+= 15 - Ambientes virtuais com VirtualEnv
+#F64 #F65 #F66
+
+= 16 - Programação orientada a objetos em Python
+#F67 #F68 #F69 #F70 #F71 #F72 #F73
+
+= 17 - Python avançado
+#F74 #F75 #F76 #F77 #F78 #F79 #F80
+
+= 18 - [PROJETO 1] - Webscraping de dados financeiros
+#F81 #F82 #F83 #F84 #F85
+
+= 19 - [PROJETO 2] - Manipulação de arquivos Excel
+#F86 #F87 #F88 #F89 #F90 #F91
+
+= 20 - [PROJETO 3] - Rastreador de criptomoedas utilizando bots do Telegram
+#F92 #F93 #F94 #F95 #F96 #F97 #F98 #F99
