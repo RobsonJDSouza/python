@@ -30,7 +30,7 @@
 #F22 - Import e módilo Math
 
 = 6 - Entrada de dados e usuários
-#F23 - A Função INout
+#F23 - A Função Input
 #F24 - Contruíndo uma calculadora
 
 = 7 - Estruturas de controle
