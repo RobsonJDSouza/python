@@ -41,40 +41,97 @@
 #F29 - Estrutura de repetição While
 
 = 8 - Dominando Listas
-#F30 #F31 #F32 #F33 #F34 #F35
+#F30 - Introdução às Listas
+#F31 - Primeiros passos com Listas
+#F32 - Acessando elementos e indexação em Listas
+#F33 - Percorrendo Listas com estruturas de repetição
+#F34 - Fatiamento de Listas (Slicing)
+#F35 - Manipulação de Listas
 
 = 9 - Dominando Dicionários
-#F36 #F37 #F38 #F39 #F40 #F41
+#F36 - Introdução ao módulo
+#F37 - Dominando Dicionários
+#F38 - Criando seus primeiros Dicionários
+#F39 - Adicionando e atualizando elementos em Dicionários
+#F40 - Excluindo elementos de Dicionários
+#F41 - Métodos de Dicionários
 
 = 10 - Dominando Sets e Tuplas
-#F42 #F43 #F44 #F45 #F46
+#F42 - Introdução aos Sets
+#F43 - Manipulação de Sets
+#F44 - Operações matemáticas em Sets
+#F45 - Introdução às Tuplas
+#F46 - Manipulação de Tuplas
 
 = 11 - Funções em Python
-#F47 #F48 #F49 #F50 #F51 #F52
+#F47 - O que são Funções
+#F48 - Desenvolvendo Funções
+#F49 - Parâmetros posicionais
+#F50 - Parâmetros nomeados
+#F51 - Calculadora utilizando Funções
+#F52 - Dicas de Tipos (Type hints)
 
 = 12 - Tratamento de erros
-#F53 #F54 #F55 #F56
+#F53 - Introdução ao módulo
+#F54 - Principais erros e exceções
+#F55 - Tratamento de erros com Try e Except
+#F56 - Lançamento de exceções com raise
 
 = 13 - Manipulação de arquivos
-#F57 #F58 #F59
+#F57 - Introdução ao módulo
+#F58 - Manipulação de arquivos com a função Open
+#F59 - Manipulação de arquivos CSV
 
 = 14 - Módulos Python e o PIP
-#F60 #F61 #F62 #F63
+#F60 - Introdução ao módulo
+#F61 - Scripts vs. Módulos vs. Pacotes
+#F62 - Biblioteca padrão do Python
+#F63 - Gerenciador de Pacotes PIP
 
 = 15 - Ambientes virtuais com VirtualEnv
-#F64 #F65 #F66
+#F64 - Problemas de dependências e VirtualEnv
+#F65 - Instalação do VirtualEnv
+#F66 - Criando, ativando e desativando ambientes virtuais
 
 = 16 - Programação orientada a objetos em Python
-#F67 #F68 #F69 #F70 #F71 #F72 #F73
+#F67 - Introdução
+#F68 - Os pilares da POO 
+#F69 - POO 
+#F70 - Herança e polimorfismo
+#F71 - Atributo e metodo de classe
+#F72 - Herança mútipla
+#F73 - Exercício de fixação
 
 = 17 - Python avançado
-#F74 #F75 #F76 #F77 #F78 #F79 #F80
+#F74 - Introdução
+#F75 - Map, Filter e Lambda
+#F76 - Compreensão de Listas
+#F77 - Compreensão de Dicionários
+#F78 - Compreensão de Sets
+#F79 - Interadores e Geradores
+#F80 - Correspondência de padrões 
 
 = 18 - [PROJETO 1] - Webscraping de dados financeiros
-#F81 #F82 #F83 #F84 #F85
+#F81 - Introdução
+#F82 - Análise de página-alvo
+#F83 - Configuração do ambiente de desenvolvimento
+#F84 - Desenvolvimento do projeto - Parte 1
+#F85 - Desenvolvimento do projeto - Parte 2
 
 = 19 - [PROJETO 2] - Manipulação de arquivos Excel
-#F86 #F87 #F88 #F89 #F90 #F91
+#F86 - Introdução
+#F87 - Configuração do projeto
+#F88 - Análise da documentação da OpenPyXL
+#F89 - Desenvolvimento do projeto - Parte 1
+#F90 - Desenvolvimento do projeto - Parte 2
+#F91 - Refatoração do projeto 
 
 = 20 - [PROJETO 3] - Rastreador de criptomoedas utilizando bots do Telegram
-#F92 #F93 #F94 #F95 #F96 #F97 #F98 #F99
+#F92 - Introdução
+#F93 - APIs e protocolo HTTP
+#F94 - Dominando APIs Rest
+#F95 - Análise da API de cotações de criptomoedas
+#F96 - Criação do bot no Telegram
+#F97 - Configuração do projeto
+#F98 - Desenvolvimento do projeto
+#F99 - Refatoração do código
