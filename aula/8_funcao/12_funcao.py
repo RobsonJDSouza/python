@@ -2,11 +2,12 @@
 Definição de Função: 
 Uma função em Python é um bloco de código reutilizável que executa uma tarefa específica. Elas são utilizadas para modularizar o código, tornando-o mais organizado, legível e fácil de manter. As funções ajudam a evitar a repetição de código, permitindo que você defina uma tarefa uma vez e a reutilize sempre que necessário.
 
-Observações
+Da perspectiva de uma função:
 def- Palavra reservada para a função
 return - Palavra reservada do que queremos retornar 
 saudacao - Nome da função
-(nome) - Parametro da função
+(nome) - Parametro da função -Um parâmetro é a variável listada entre parênteses na definição da função.
+Argumento é o valor enviado à função quando ela é chamada.
 
 Escopo po de Variáveis: 
 As variáveis definidas dentro de uma função têm um escopo local, o que significa que elas só podem ser acessadas dentro da própria função. Variáveis definidas fora de uma função têm escopo global e podem ser acessadas de qualquer lugar do programa, incluindo dentro de funções.Esco
@@ -45,27 +46,44 @@ resultado = quadrado(5)
 print(resultado)  # Saída: 25
 
 
-###############################
-# def teste_3(*args):
-#     print(args)
-# lista = [1, 2, 3, 4, 5]
-# n1, n2, *n3 = lista
-# print(n1, n2, n3)
-# print(*lista, sep='-') #desempacotar uma lista #sep comando para separar algo 
+# Argumentos Arbitrários Posicionais:
+'''
+Você pode definir um parâmetro precedido por um asterisco (*) na definição da função para coletar um número arbitrário de argumentos posicionais. Por convenção, frequentemente chamamos esse parâmetro de *args, mas o nome pode ser qualquer um, contanto que o asterisco seja precedido.
+
+O Retorno é uma tupla
+'''
+def mostra_nome(*args):
+    print(f'Os nomes são: {args}')
+mostra_nome('Robson', 'Ana', 'Sofia')
 
 
+def mostra_nome(*args):
+    for nome in args:
+        print(f'O nome é: {nome}')
+mostra_nome('Robson', 'Ana', 'Sofia')
 
-# def nome (n, **outros_nomes):
-#     print(f'{n}')
-#     print(f'{outros_nomes}')
-#     for nome, valor in outros_nomes.items():
-#             print({nome}, {valor})
 
-# nome (n = 'Robson', nome = 'Sofia', nome_1 = 'Ana')
+# Argumentos Arbitrários de Palavras-chave:
+'''
+Da mesma forma, você pode definir um parâmetro precedido por dois asteriscos (**) para coletar um número arbitrário de argumentos de palavras-chave. Por convenção, frequentemente chamamos esse parâmetro de **kwargs, mas assim como antes, o nome pode ser qualquer um.
+'''
+def minha_funcao(**kwargs):
+    for chave, valor in kwargs.items():
+        print(f"{chave}: {valor}")
+
+minha_funcao(nome="Robson", idade=40, cidade="São Paulo")
+
+# Passando uma lista
+def escreva_nome(nome):
+    for nomes in nome:
+        print(nomes)
+
+lista = ["Robson", "Ana"]
+
+escreva_nome(lista)
 
 # #Aula 01/02/2024
-# def monta_computador(cpu, memoria, hd, monitor= 4, **outros_atributos): 
-# #cpu, memoria e hd são parametros da função
+# def monta_computador(cpu, memoria, hd, monitor= 4, **outros_atributos): #cpu, memoria e hd são parametros da função
 # #Paramentros com valores. Acrescentado o monitor com o valor
 # #Colocar varios atributos. Acrescentado 2 asterisco com parametros da função. Teremos um dicionario na chamada.
 #     print('Informações do computador')
