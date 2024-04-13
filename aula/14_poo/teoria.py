@@ -43,15 +43,49 @@ saudacao:
 # Para criar um objeto da classe Pessoa e chamar o método saudacao, fazemos o seguinte:
 
 # Criando um objeto da classe Pessoa
-p1 = Pessoa('Robson', 40)
+# p1 = Pessoa('Robson', 40)
 # Chamando o método saudacao
-p1.saudacao()
+# p1.saudacao()
+
+
+# HERANÇA
+'''
+A herança nos permite definir uma classe que herda todos os métodos e propriedades de outra classe.
+
+Classe pai é a classe da qual está sendo herdada, também chamada de classe base.
+
+Classe filha é a classe que herda de outra classe, também chamada de classe derivada.
+'''
+
+class Estudante (Pessoa):
+    def __init__(self, nome, idade, curso, docencia, faculdade) -> None:
+        super().__init__(nome, idade)
+        self.curso = curso
+        self.docencia = docencia
+        self.faculdade = faculdade
+    
+    def apresentacao(self):
+        return f'Olá, meu nome é {self.nome}, tenho {self.idade} anos. Estou fazendo {self.docencia} em {self.curso} na {self.faculdade}.'
+
+class Professor(Pessoa):
+    def __init__(self, nome, idade, disciplina) -> None:
+        super().__init__(nome, idade)
+        self.disciplina = disciplina
+    
+    def apresentacao(self):
+        return f'Olá, meu nome é {self.nome}, tenho {self.idade} anos e sou professor da disciplina {self.disciplina}.'
+    
+aluno = Estudante('Ana', '40', 'Controladoria', 'Pós-graduação', 'UNIP')
+mestre = Professor('Robson', '39', 'Controladoria')
+
+print(aluno.apresentacao())
+print(mestre.apresentacao())
 
 
 # PILARES DA POO
+# - Herança - É o pilar da POO que permite que Classes derivem de outras Classes para aproveitar e reutilizar código.
 # - Encapsulamento - Isolar/esconder dados em Classes, evitando acesso externo
 # - Abstração - Características que o usuário não precisa saber
-# - Herança - É o pilar da POO que permite que Classes derivem de outras Classes para aproveitar e reutilizar código.
 # - Polimorfismo - Caracteristica que métodos possuem de ssumir várias(poli) formas(morfismo)
 
 
