@@ -7,8 +7,6 @@ vendas2020 = [951642,244295,26964,787604,867660,78830,710331,646016,694913,53970
 
 vendas = list(zip(vendas2019, vendas2020))
 dicionario = dict(zip(produtos, vendas))
-
-for i in dicionario:
-    print(dicionario)
+print(dicionario)
 
 
