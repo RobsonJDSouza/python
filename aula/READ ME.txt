@@ -1,0 +1,28 @@
+
+ARQUIVO launch.json.
+No VSCode, você também pode configurar o ambiente e definir o local onde vai rodar o projeto usando um arquivo de configuração chamado launch.json. Este arquivo permite que você defina e personalize as configurações de depuração para diferentes ambientes e cenários.
+
+Para criar ou editar um launch.json no VSCode, siga os passos abaixo:
+
+Abra o seu projeto no VSCode.
+Vá até a aba de depuração (ícone de bug na barra lateral esquerda).
+Clique no ícone de engrenagem no canto superior direito e selecione "Add Configuration..." ou "Adicionar Configuração..." (o texto pode variar dependendo do idioma do seu VSCode).
+Selecione o tipo de ambiente que deseja configurar (por exemplo, Python, Node.js, etc.).
+O VSCode irá gerar um arquivo launch.json com uma configuração padrão para o ambiente selecionado.
+Personalize as configurações conforme necessário. Por exemplo, você pode definir o script que será executado, os argumentos de linha de comando, o ambiente de execução (por exemplo, terminal integrado ou terminal externo), entre outras opções.
+Aqui está um exemplo de como uma configuração básica em launch.json para um projeto Python pode parecer:
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Executar",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
+
+
