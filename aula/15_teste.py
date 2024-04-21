@@ -1,4 +1,11 @@
-a = 5
-b = 2
 
-print( a // 2)
+
+
+while True:
+    numero = input('Número: ')
+    if numero % 2:
+        print('impar')
+    elif numero == 'pare':
+        break
+    else:
+        print('Par')
