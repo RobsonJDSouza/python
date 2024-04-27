@@ -1,11 +1,17 @@
+def filtrar_provedor(lista, pedaco):
+    lista_filtrada = []
+    for item in lista:
+        if pedaco in item:
+            lista_filtrada.append(item)
+    return lista_filtrada
+    
 
 
 
-while True:
-    numero = input('Número: ')
-    if numero % 2:
-        print('impar')
-    elif numero == 'pare':
-        break
-    else:
-        print('Par')
+lista_textos = ['lira@gmail.com', 'zezinho@hotmail.com', 'joao@gmail.com', 'alon@gmail.com']
+
+lista = filtrar_provedor(lista_textos, 'hotmail')
+print(lista)
+
+
+
