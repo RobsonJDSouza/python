@@ -1,5 +1,25 @@
+# Script:
+'''Um arquivo Python (.py) que contém código executável.
+É a unidade básica de execução em Python.
+Pode ser usado para realizar tarefas específicas, como calcular a média de uma lista de números ou enviar um email.
+Exemplo: meu_script.py'''
 
-A biblioteca padrão do Python é um conjunto de módulos pré-instalados que acompanham a instalação do Python. Ela oferece uma ampla gama de funcionalidades prontas para uso, desde manipulação de strings até operações de rede.
+# Módulo:
+'''Um arquivo Python (.py) que contém definições de funções, classes e variáveis.
+Pode ser importado para outros scripts para reutilizar código.
+É uma boa prática para organizar código em módulos para facilitar a leitura e a manutenção.
+Exemplo: biblioteca_de_funcoes.py'''
+
+# Pacote:
+'''Uma coleção de módulos organizados em uma estrutura de diretórios.
+Permite organizar código em unidades maiores e mais complexas.
+Pacotes podem ser instalados e utilizados por outros programas Python.
+Exemplo: pacote_de_ferramenta
+__init__
+Iremos mostrar para o python que a pasta é um pacote'''
+
+
+'''A biblioteca padrão do Python é um conjunto de módulos pré-instalados que acompanham a instalação do Python. Ela oferece uma ampla gama de funcionalidades prontas para uso, desde manipulação de strings até operações de rede.
 
 Alguns dos principais recursos da biblioteca padrão do Python incluem:
 
@@ -27,3 +47,14 @@ datetime: Fornece classes para manipulação de datas e horas.
 json: Fornece suporte para codificação e decodificação JSON.
 requests: Fornece uma interface de alto nível para fazer solicitações HTTP.
 A biblioteca padrão do Python é um recurso valioso para qualquer programador Python.
+
+
+Gerenciado de pacote Python externo.
+Ele acessa o PY PI (Python Pakage Index) onde temos todos os pacotes.
+https://pypi.org/
+
+COMANDOS
+
+pip --version
+pip --help 
+pip install pandas'''

@@ -1,16 +1,11 @@
-#modulo são bibliotecas  - 
-#existe duas maneiras de importar
-#import robson
-#from robson import olho
-
 #Modulo
-'''
-import math - importa toda biblioteca
-from math import sqrt - importa apenas a necessidade
-from math import ctrl + espaço mostra todas a biblioteca
-https://docs.python.org/3.10/library/numeric.html
 
-'''
+# import math - importa toda biblioteca
+# from math import sqrt - importa apenas a necessidade
+# from math import ctrl + espaço mostra todas a biblioteca
+# https://docs.python.org/3.10/library/numeric.html
+
+
 #Exemplo
 # import math 
 # x = 25
@@ -46,6 +41,3 @@ https://docs.python.org/3.10/library/numeric.html
 # print(json.dumps(cadastro, ensure_ascii=False, indent=True)) 
 # # ensure_ascii=False arrumar os caracteres especiais
 
-import os
-for diretorio in os.listdir('./'):
-    print(diretorio)

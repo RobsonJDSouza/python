@@ -24,3 +24,5 @@ import os
 
 # os.rename("./dados/logo_rename.png", "./dados/logo.png") #Renomear arquivo
 
+for diretorio in os.listdir('./'):
+    print(diretorio)

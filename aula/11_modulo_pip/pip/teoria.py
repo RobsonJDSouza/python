@@ -1,4 +1,4 @@
-Isola o ambiente de desenvolvimento
+'''Isola o ambiente de desenvolvimento
 Obs. O PIP tem que estar instalado nas variáveis de ambiente
 
 https://docs.python.org/pt-br/3/tutorial/venv.html
@@ -25,6 +25,4 @@ virtualenv -p ~/.pyenv/versions/3.10.12/bin/python env_2
 
 Outra forma
 python3 -m venv activate
-python3 -m pip install python==3.10.12
-
-                
+python3 -m pip install python==3.10.12'''               
