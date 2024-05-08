@@ -1,6 +1,6 @@
-Tuplas em Python
+# Tuplas em Python
 
-Em Python, uma tupla é uma coleção ordenada e imutável de elementos. Isso significa que, uma vez que uma tupla é criada, ela não pode ser alterada, adicionada ou removida. As tuplas são semelhantes às listas, mas têm a distinção fundamental de serem imutáveis.
+'''Em Python, uma tupla é uma coleção ordenada e imutável de elementos. Isso significa que, uma vez que uma tupla é criada, ela não pode ser alterada, adicionada ou removida. As tuplas são semelhantes às listas, mas têm a distinção fundamental de serem imutáveis.
 
 Aqui estão algumas características importantes das tuplas em Python:
 
@@ -18,4 +18,4 @@ As tuplas são definidas usando parênteses () ou simplesmente separando os elem
 
 Eficiência: As tuplas são mais eficientes em termos de uso de memória e processamento do que as listas, porque são imutáveis e têm um tamanho fixo.
 
-As tuplas são úteis em situações em que você deseja garantir que um conjunto de valores não seja alterado após sua criação, como ao passar argumentos para uma função ou ao retornar múltiplos valores de uma função. Elas são frequentemente usadas em Python para operações de empacotamento e desempacotamento de dados, bem como para representar estruturas de dados imutáveis.
+As tuplas são úteis em situações em que você deseja garantir que um conjunto de valores não seja alterado após sua criação, como ao passar argumentos para uma função ou ao retornar múltiplos valores de uma função. Elas são frequentemente usadas em Python para operações de empacotamento e desempacotamento de dados, bem como para representar estruturas de dados imutáveis.'''
