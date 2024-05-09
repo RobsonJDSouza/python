@@ -74,3 +74,9 @@ vendas_mes.update(vendas_2tri)
 print(vendas_mes)
 
 
+
+
+
+
+
+
