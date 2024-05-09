@@ -14,7 +14,17 @@
 # Exemplo
 mais_vendidos = {'tecnologia': 'iphone', 'refrigeracao': 'ar consul 12000 btu', 'livros': 'o alquimista', 'eletrodoméstico': 'geladeira', 'lazer': 'prancha surf'}
 
+# - Qual foi o item mais vendido nas categorias 'livros' e 'lazer'?
+livro = mais_vendidos['livros']
+lazer = mais_vendidos['lazer']
+print(livro)
+print(lazer)
+
+
 vendas_tecnologia = {'iphone': 15000, 'samsung galaxy': 12000, 'tv samsung': 10000, 'ps5': 14300, 'tablet': 1720, 'ipad': 1000, 'tv philco': 2500, 'notebook hp': 1000, 'notebook dell': 17000, 'notebook asus': 2450}
 
-# - Qual foi o item mais vendido nas categorias 'livros' e 'lazer'?
 # - Quanto foi vendido de 'notebook asus' e de 'ipad'?
+qtde_noteasus = vendas_tecnologia['notebook asus']
+qtde_ipad = vendas_tecnologia['ipad']
+print(qtde_noteasus)
+print(qtde_ipad)
