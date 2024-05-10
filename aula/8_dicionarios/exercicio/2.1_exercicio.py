@@ -1,4 +1,4 @@
-## 1. Exercício 
+##Exercício 
 
 '''Dessa vez, vamos apenas treinar a manipulação de dicionário. Transforme as listas abaixo em 1 único dicionário no formato:'''
 
