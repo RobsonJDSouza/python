@@ -1,16 +1,15 @@
-# "Fórmulas" de Texto - Métodos de String
+#Métodos de String
 
 ## Estrutura:
-
 '''- Normalmente usamos a estrutura texto.método() para fazer as modificações que queremos
-- Alguns métodos pedem "argumentos", que são informações que temos que passar para a fórmula (método) para ela funcionar. Esses argumentos são passados dentro do parênteses'''
+- Alguns métodos pedem "argumentos", que são informações que temos que passar para a fórmula (método) para ela funcionar. Esses argumentos são passados dentro do parênteses
+'''
 
 ## Como usar:
-
-'''Não decore os métodos, os que você for mais usando com o tempo você vai decorar o que precisar.
-
-Mas a dica é: use essa lista para consulta e busque entender como os métodos funcionam e suas aplicações, para poder consultar e usar quando precisar.'''
-
+'''
+Não decore os métodos, os que você for mais usando com o tempo você vai decorar o que precisar.
+Mas a dica é: use essa lista para consulta e busque entender como os métodos funcionam e suas aplicações, para poder consultar e usar quando precisar.
+'''
 
 #- capitalize() -> Coloca a 1ª letra Maiúscula
 texto = 'lira'
