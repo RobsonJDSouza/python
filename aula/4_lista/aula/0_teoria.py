@@ -1,7 +1,8 @@
 
-Listas em Python
+# Listas em Python
 
 
+'''
 As listas em Python são estruturas de dados que permitem armazenar uma coleção ordenada de elementos. Elas são muito versáteis e uma das estruturas de dados mais utilizadas na linguagem. Aqui estão algumas características importantes sobre as listas em Python:
 
 Ordenadas: 
@@ -21,3 +22,4 @@ As listas em Python podem crescer ou encolher dinamicamente para acomodar a adi�
 
 Métodos úteis: 
 Python fornece uma variedade de métodos embutidos que facilitam a manipulação de listas, como append(), insert(), remove(), pop(), sort(), reverse(), entre outros.
+'''
