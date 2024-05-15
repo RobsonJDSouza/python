@@ -79,4 +79,5 @@ Quando o programa não conseguiu usar o método de encoding correto. Normalmente
 
 #### 10. ValueError
 Quando passamos um valor que não pode ser passado para uma função ou método.
+
 '''
