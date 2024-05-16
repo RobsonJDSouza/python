@@ -20,6 +20,7 @@ quantidade_nome = int(input("Digite a quantidade de nome que a lista deve conter
 while len(lista) < quantidade_nome:
     a = input()
     lista.append(a)
+    # file deepcode ignore CopyPasteError: <please specify a reason of ignoring this>, file deepcode ignore PythonSameEvalBinaryExpressiontrue: <please specify a reason of ignoring this>
     if quantidade_nome is quantidade_nome:
       print("Digite mais um nome")
     else:

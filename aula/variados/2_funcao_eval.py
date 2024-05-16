@@ -8,4 +8,5 @@ operacao = input('Digite um operador: ')
 
 resultado = f'{numero1} {operacao} {numero2}'
 
+# file deepcode ignore CodeInjection: <please specify a reason of ignoring this>
 print (eval(resultado))

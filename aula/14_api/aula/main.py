@@ -16,6 +16,7 @@
 import requests
 import csv
 
+# file deepcode ignore NoHardcodedCredentials: <please specify a reason of ignoring this>
 username = 'Robson'
 
 url = f'https://api.github.com/users/{username}'

@@ -57,7 +57,7 @@ if caminho:
             if extensao in locais[pasta]:
                 pasta_caminho = os.path.join(caminho, pasta)
                 if not os.path.exists(pasta_caminho):
-                    os.mkdir(pasta_caminho)
+                    os.makedirs(pasta_caminho)
                 os.rename(os.path.join(caminho, arquivo), os.path.join(pasta_caminho, arquivo))
 else:
     print("Nenhuma pasta selecionada.")

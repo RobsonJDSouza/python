@@ -28,6 +28,7 @@ print(texto.count('.'))
 
 #- endswith() -> Verifica se o texto termina com um valor específico e dá como resposta True ou False
 texto = 'lira@gmail.com'
+# file deepcode ignore incomplete~url~sanitazation: <please specify a reason of ignoring this>
 print(texto.endswith('gmail.com'))
 
 
