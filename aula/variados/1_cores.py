@@ -1,3 +1,5 @@
+
+'''
 Style
 0 » sem estilo                          
 1 » negrito                         
@@ -32,3 +34,4 @@ pip instalar termcolor
 Módulo de importação
 Use a função colored() para adicionar cor ao texto
 Imprimir texto colorido
+'''

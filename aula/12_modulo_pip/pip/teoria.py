@@ -1,28 +1,17 @@
-'''Isola o ambiente de desenvolvimento
-Obs. O PIP tem que estar instalado nas variáveis de ambiente
+'''
+PIP 
+É um gerenciador de pacotes para pacotes Python ou módulos, se desejar.
 
-https://docs.python.org/pt-br/3/tutorial/venv.html
+O que é um pacote?
+Um pacote contém todos os arquivos necessários para um módulo.
+Módulos são bibliotecas de código Python que você pode incluir em seu projeto
 
-virtualenv --version
+Comando
+pip install {nome_do_pacote}
+pip instal {nome_do_pacote} ==3.1 
+pip uninstall {nome_do_pacote}
+pip --version
 pip list
 pip --help
-pip instal django ==3.1 
-
-CRIAR AMBIENTE VIRTUAL
-Criar a env - virtualenv {{nome da pasta. Geralmente colocamos como env/venv }}
-    python -m venv tutorial-env
-
-Ativar a env (comando para ativar a env. Comando é executado na raiz do projeto)
-    source tutorial-env/bin/activate
-
-Desativando a env (Comando para desativar a env)
-    deactivate
-
-
-Para trocar a versão do Python em uma virtualenv no Linux
-pyenv install {{versão desejada}}
-virtualenv -p ~/.pyenv/versions/3.10.12/bin/python env_2
-
-Outra forma
-python3 -m venv activate
-python3 -m pip install python==3.10.12'''               
+pip install --upgrade
+'''
