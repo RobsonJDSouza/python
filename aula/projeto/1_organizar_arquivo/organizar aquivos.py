@@ -6,8 +6,8 @@
 # lista_arquivos = os.listdir(caminho)
 
 # locais = {
-#     "imagens": [".png", "jpg"],
-#     "planilhas": ["xlsx"],
+#     "imagens": [".png", ".jpg"],
+#     "planilhas": [".xlsx"],
 #     "csv": [".csv"],
 #     "paython": [".py"],
 #     "pdf": [".pdf"],
@@ -48,7 +48,9 @@ if caminho:
         "python": [".py"],
         "pdf": [".pdf"],
         "xml": [".xml"],
-        "zip": [".zip"]
+        "zip": [".zip"],
+        "pptx": [".pptx"],
+        "json": [".json"]
     }
 
     for arquivo in lista_arquivos:

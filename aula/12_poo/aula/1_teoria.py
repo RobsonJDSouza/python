@@ -1,5 +1,6 @@
 '''
-Classe - É um model para construção de um objeto
+Classe
+É um model para construção de um objeto
 
     Atributo == Que coisas eu tenho? 
     Metodo == Que coisas eu faço 
