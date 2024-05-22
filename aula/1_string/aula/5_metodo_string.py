@@ -48,7 +48,6 @@ print('O faturamento da loja foi de {} reais'.format(faturamento))
 #- isalnum() -> Verifica se um texto é todo feito com caracteres alfanuméricos (letras e números) -> letras com acento ou ç são considerados letras para essa função.
 texto = 'João123'
 print(texto.isalnum())
-
 #Obs: se o texto fosse 'Jo~ao' ou então 'Joao#' o resultado seria False
 
 
