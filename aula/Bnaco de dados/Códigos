@@ -1,0 +1,22 @@
+Módulo 3
+Resumo do Módulo
+Neste módulo, vimos os comandos básicos da linguagem SQL:
+
+SELECT * FROM tabela: Seleciona todas as colunas da tabela.
+
+SELECT Coluna1, Coluna2, Coluna3 FROM tabela: Seleciona apenas 3 colunas específicas da tabela.
+
+SELECT DISTINCT Coluna1: Seleciona valores distintos de uma coluna.
+
+SELECT TOP(N): Seleciona as N primeiras linhas da tabela.
+
+SELECT TOP(N) PERCENT: Seleciona as N% primeiras linhas da tabela.
+
+SELECT Coluna1 AS ‘Nome’ FROM tabela: O AS renomeia as colunas selecionadas na tabela.
+
+-- Comentários podem ser iniciados com -- ou / ... /. Servem para explicar o que foi feito no código e serão ignorados.
+
+Indentação do código deixa tudo muito mais fácil de interpretar.
+
+Nota:
+"Todos os SELECTs que fizemos retornaram uma tabela, que nada mais são do que consultas ou queries."
