@@ -1,0 +1,80 @@
+---
+
+### 🔢 **1. Operadores Aritméticos**
+
+| Operador | Descrição       | Exemplo   | Resultado |
+| -------- | --------------- | --------- | --------- |
+| `+`      | Adição          | `3 + 2`   | `5`       |
+| `-`      | Subtração       | `5 - 3`   | `2`       |
+| `*`      | Multiplicação   | `4 * 2`   | `8`       |
+| `/`      | Divisão         | `10 / 2`  | `5.0`     |
+| `//`     | Divisão inteira | `10 // 3` | `3`       |
+| `%`      | Módulo (resto)  | `10 % 3`  | `1`       |
+| `**`     | Exponenciação   | `2 ** 3`  | `8`       |
+
+---
+
+### 🧮 **2. Operadores de Comparação (Relacionais)**
+
+| Operador | Descrição        | Exemplo  | Resultado |
+| -------- | ---------------- | -------- | --------- |
+| `==`     | Igual a          | `3 == 3` | `True`    |
+| `!=`     | Diferente de     | `4 != 5` | `True`    |
+| `>`      | Maior que        | `5 > 3`  | `True`    |
+| `<`      | Menor que        | `2 < 4`  | `True`    |
+| `>=`     | Maior ou igual a | `5 >= 5` | `True`    |
+| `<=`     | Menor ou igual a | `4 <= 5` | `True`    |
+
+---
+
+### 🧠 **3. Operadores Lógicos**
+
+| Operador | Descrição             | Exemplo          | Resultado |
+| -------- | --------------------- | ---------------- | --------- |
+| `and`    | E (ambas verdadeiras) | `True and False` | `False`   |
+| `or`     | Ou (uma ou outra)     | `True or False`  | `True`    |
+| `not`    | Não (negação)         | `not True`       | `False`   |
+
+---
+
+### 🪄 **4. Operadores de Atribuição**
+
+| Operador | Exemplo   | Equivalente a      |
+| -------- | --------- | ------------------ |
+| `=`      | `x = 5`   | Atribuição simples |
+| `+=`     | `x += 2`  | `x = x + 2`        |
+| `-=`     | `x -= 1`  | `x = x - 1`        |
+| `*=`     | `x *= 3`  | `x = x * 3`        |
+| `/=`     | `x /= 2`  | `x = x / 2`        |
+| `//=`    | `x //= 2` | `x = x // 2`       |
+| `%=`     | `x %= 3`  | `x = x % 3`        |
+| `**=`    | `x **= 2` | `x = x ** 2`       |
+
+---
+
+### 🧱 **5. Operadores de Identidade**
+
+| Operador | Descrição                            | Exemplo      | Resultado         |
+| -------- | ------------------------------------ | ------------ | ----------------- |
+| `is`     | Verdadeiro se for o mesmo objeto     | `x is y`     | `True` ou `False` |
+| `is not` | Verdadeiro se não for o mesmo objeto | `x is not y` | `True` ou `False` |
+
+```python
+a = [1, 2]
+b = a
+c = [1, 2]
+
+print(a is b)     # True (mesmo objeto)
+print(a is c)     # False (mesmo conteúdo, objetos diferentes)
+```
+
+---
+
+### 📦 **6. Operadores de Associação (Membership)**
+
+| Operador | Descrição                     | Exemplo             | Resultado |
+| -------- | ----------------------------- | ------------------- | --------- |
+| `in`     | Verdadeiro se estiver contido | `"a" in "casa"`     | `True`    |
+| `not in` | Verdadeiro se não estiver     | `"z" not in "casa"` | `True`    |
+
+---

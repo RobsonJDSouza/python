@@ -1,14 +1,7 @@
-#nome = 'Robson jose de souza'
-#email = 'robson@gmail.com'
-#rint(len(nome))
-#print('Robson' in nome)
+##a = "35250140338041000107550010000031951249814350"
+##print(len(a))
 
 
-#print('Primeiro Caractere ' + nome[0])
-#print('Último Caractere ' + nome[-1])
-#print('Servidor do email ' + 'gmail' in email)
+a = 'Robson'
 
-a = "testetestetetestetestetetestexxxxxxxxtestetetestetestetetestete123456"
-
-print(len(a))
-
+print(a.split())

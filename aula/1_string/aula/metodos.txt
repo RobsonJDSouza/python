@@ -2,48 +2,166 @@
 https://www.w3schools.com/python/python_strings_methods.asp
 
 
-capitalize()	Converts the first character to upper case
-casefold()	Converts string into lower case
-center()	Returns a centered string
-count()	Returns the number of times a specified value occurs in a string
-encode()	Returns an encoded version of the string
-endswith()	Returns true if the string ends with the specified value
-expandtabs()	Sets the tab size of the string
-find()	Searches the string for a specified value and returns the position of where it was found
-format()	Formats specified values in a string
-format_map()	Formats specified values in a string
-index()	Searches the string for a specified value and returns the position of where it was found
-isalnum()	Returns True if all characters in the string are alphanumeric
-isalpha()	Returns True if all characters in the string are in the alphabet
-isascii()	Returns True if all characters in the string are ascii characters
-isdecimal()	Returns True if all characters in the string are decimals
-isdigit()	Returns True if all characters in the string are digits
-isidentifier()	Returns True if the string is an identifier
-islower()	Returns True if all characters in the string are lower case
-isnumeric()	Returns True if all characters in the string are numeric
-isprintable()	Returns True if all characters in the string are printable
-isspace()	Returns True if all characters in the string are whitespaces
-istitle()	Returns True if the string follows the rules of a title
-isupper()	Returns True if all characters in the string are upper case
-join()	Joins the elements of an iterable to the end of the string
-ljust()	Returns a left justified version of the string
-lower()	Converts a string into lower case
-lstrip()	Returns a left trim version of the string
-maketrans()	Returns a translation table to be used in translations
-partition()	Returns a tuple where the string is parted into three parts
-replace()	Returns a string where a specified value is replaced with a specified value
-rfind()	Searches the string for a specified value and returns the last position of where it was found
-rindex()	Searches the string for a specified value and returns the last position of where it was found
-rjust()	Returns a right justified version of the string
-rpartition()	Returns a tuple where the string is parted into three parts
-rsplit()	Splits the string at the specified separator, and returns a list
-rstrip()	Returns a right trim version of the string
-split()	Splits the string at the specified separator, and returns a list
-splitlines()	Splits the string at line breaks and returns a list
-startswith()	Returns true if the string starts with the specified value
-strip()	Returns a trimmed version of the string
-swapcase()	Swaps cases, lower case becomes upper case and vice versa
-title()	Converts the first character of each word to upper case
-translate()	Returns a translated string
-upper()	Converts a string into upper case
-zfill()	Fills the string with a specified number of 0 values at the beginning
+Método	Significado em português
+capitalize()	Converte o primeiro caractere para maiúsculo
+casefold()	Converte a string para minúsculas (mais forte que lower())
+center()	Centraliza a string (com preenchimento)
+count()	Retorna quantas vezes um valor aparece na string
+encode()	Retorna uma versão codificada da string (ex: UTF-8)
+endswith()	Retorna True se a string terminar com o valor especificado
+expandtabs()	Define o tamanho do caractere de tabulação (\t)
+find()	Procura um valor e retorna a posição da primeira ocorrência
+format()	Insere valores formatados na string
+format_map()	Insere valores usando um dicionário como mapa
+index()	Retorna a posição da primeira ocorrência do valor (erro se não encontrar)
+isalnum()	Retorna True se todos os caracteres forem letras ou números
+isalpha()	Retorna True se todos os caracteres forem letras
+isascii()	Retorna True se todos os caracteres forem ASCII
+isdecimal()	Retorna True se todos os caracteres forem números decimais
+isdigit()	Retorna True se todos os caracteres forem dígitos
+isidentifier()	Retorna True se for um identificador válido (como nomes de variáveis)
+islower()	Retorna True se todos os caracteres forem minúsculos
+isnumeric()	Retorna True se todos os caracteres forem numéricos
+isprintable()	Retorna True se todos os caracteres forem imprimíveis
+isspace()	Retorna True se todos os caracteres forem espaços em branco
+istitle()	Retorna True se a string estiver no formato de título (Ex: "Este É Um Título")
+isupper()	Retorna True se todos os caracteres forem maiúsculos
+join()	Junta os elementos de um iterável com a string como separador
+ljust()	Justifica a string à esquerda
+lower()	Converte todos os caracteres para minúsculas
+lstrip()	Remove os espaços à esquerda da string
+maketrans()	Cria uma tabela de tradução para ser usada com translate()
+partition()	Divide a string em 3 partes em torno de um separador
+replace()	Substitui parte da string por outra
+rfind()	Retorna a última posição de ocorrência de um valor
+rindex()	Retorna a última posição de ocorrência (erro se não encontrar)
+rjust()	Justifica a string à direita
+rpartition()	Divide em 3 partes com base na última ocorrência de um separador
+rsplit()	Divide a string a partir da direita
+rstrip()	Remove os espaços à direita da string
+split()	Divide a string usando um separador
+splitlines()	Divide a string por quebras de linha
+startswith()	Retorna True se a string começar com o valor especificado
+strip()	Remove espaços dos dois lados da string
+swapcase()	Inverte maiúsculas e minúsculas na string
+title()	Coloca a primeira letra de cada palavra em maiúscula
+translate()	Aplica uma tabela de tradução aos caracteres da string
+upper()	Converte todos os caracteres para maiúsculos
+zfill()	Preenche a string com zeros à esquerda até atingir o tamanho desejado
+
+---
+
+### 🔤 **1. Capitalização e caixa de texto**
+
+```python
+print("python".capitalize())  # Python
+print("PYTHON".casefold())    # python
+print("python".center(10, "-"))  # --python--
+print("Olá mundo!".swapcase())  # oLÁ MUNDO!
+print("python é legal".title())  # Python É Legal
+print("python".upper())       # PYTHON
+print("PYTHON".lower())       # python
+```
+
+---
+
+### 🔎 **2. Busca e contagem**
+
+```python
+print("banana".count("a"))    # 3
+print("banana".find("n"))     # 2
+print("banana".rfind("a"))    # 5
+print("banana".index("n"))    # 2
+print("banana".rindex("a"))   # 5
+```
+
+---
+
+### 📌 **3. Verificação de tipo de caracteres**
+
+```python
+print("abc123".isalnum())     # True
+print("abc".isalpha())        # True
+print("123".isdigit())        # True
+print("123".isdecimal())      # True
+print("π".isnumeric())        # True
+print("var_1".isidentifier()) # True
+print("texto".islower())      # True
+print("TEXTO".isupper())      # True
+print("Texto Legal".istitle())# True
+print("   ".isspace())        # True
+print("á".isascii())          # False
+print("Olá!".isprintable())   # True
+```
+
+---
+
+### 🔁 **4. Substituição e formatação**
+
+```python
+print("olá mundo".replace("mundo", "Python"))  # olá Python
+print("Valor: {}".format(10))                  # Valor: 10
+print("Valor: {valor}".format_map({'valor': 20}))  # Valor: 20
+```
+
+---
+
+### 📎 **5. Testes com começo/fim e separação**
+
+```python
+print("python.py".endswith(".py"))     # True
+print("python.py".startswith("py"))    # True
+print("a,b,c".split(","))              # ['a', 'b', 'c']
+print("linha1\nlinha2".splitlines())   # ['linha1', 'linha2']
+```
+
+---
+
+### 🧼 **6. Espaços e alinhamento**
+
+```python
+print(" texto ".strip())      # 'texto'
+print(" texto ".lstrip())     # 'texto '
+print(" texto ".rstrip())     # ' texto'
+print("42".zfill(5))          # '00042'
+print("python".ljust(10, "-"))# 'python----'
+print("python".rjust(10, "-"))# '----python'
+```
+
+---
+
+### 📚 **7. Junção e tabulação**
+
+```python
+print(",".join(["a", "b", "c"]))    # a,b,c
+print("a\tb\tc".expandtabs(4))      # a   b   c
+```
+
+---
+
+### 🧩 **8. Particionamento**
+
+```python
+print("nome=joao".partition("="))   # ('nome', '=', 'joao')
+print("a=b=c".rpartition("="))      # ('a=b', '=', 'c')
+print("a b c".rsplit(" ", 1))       # ['a b', 'c']
+```
+
+---
+
+### 🔄 **9. Tradução de caracteres**
+
+```python
+# Trocar a por @ e e por 3
+tabela = str.maketrans("ae", "@3")
+print("paralela".translate(tabela))  # p@r@l@l@
+```
+
+---
+
+Se quiser exemplos mais avançados (como com listas, arquivos ou expressões regulares), posso preparar também. Deseja?
+
+
+
+
+

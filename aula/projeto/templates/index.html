@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sentimento de Mercado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+
+    #sentimento {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .cartao {
+      width: 140px;
+      padding: 10px;
+      border-radius: 6px;
+      color: white;
+      font-size: 0.85em;
+      line-height: 1.3;
+    }
+
+    .cartao-verde { background-color: #2e7d32; }
+    .cartao-vermelho { background-color: #c62828; }
+    .cartao-neutro { background-color: #555; }
+
+    .ativo {
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+
+    .valor {
+      font-size: 1.3em;
+      margin: 4px 0;
+    }
+
+    .variacao {
+      font-weight: bold;
+    }
+
+    .extra {
+      font-size: 0.75em;
+      opacity: 0.85;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📊 Sentimento de Mercado (Tempo Real)</h1>
+  <div id="sentimento">Carregando sentimento...</div>
+
+  <h2>Índices Globais</h2>
+  <div class="container" id="indices"></div>
+
+  <h2>Commodities</h2>
+  <div class="container" id="commodities"></div>
+
+  <h2>Câmbio</h2>
+  <div class="container" id="cambio"></div>
+
+  <script>
+    const grupos = {
+      "Índices Globais": [
+        "S&P500", "Nasdaq100", "DowJones", "Russell2000",
+        "Nikkei225", "EuroStoxx50", "DAX", "VIX", "DXY"
+      ],
+      "Commodities": ["Brent", "WTI", "Gold"],
+      "Câmbio": ["USDJPY", "USDCNH", "USDEUR", "USDGBP"]
+    };
+
+    function criarCartoes(containerId, dados, ativos) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = ativos.map(ativo => {
+        const item = dados[ativo];
+        if (!item) return '';
+
+        const variacao = item.variacao || '';
+        const icone = variacao.startsWith('+') ? '▲' : variacao.startsWith('-') ? '▼' : '';
+        const corClasse = variacao.startsWith('+') ? 'cartao-verde' :
+                          variacao.startsWith('-') ? 'cartao-vermelho' : 'cartao-neutro';
+
+        return `
+          <div class="cartao ${corClasse}">
+            <div class="ativo">${ativo}</div>
+            <div class="valor">${item.valor}</div>
+            <div class="variacao">${icone} ${variacao}</div>
+            <div class="extra">H ${item.maximo || '--'} / L ${item.minimo || '--'}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    async function carregarDados() {
+      const resposta = await fetch('/dados');
+      const json = await resposta.json();
+      const dados = json.dados;
+      const sentimento = json.sentimento;
+
+      document.getElementById('sentimento').textContent = `🧭 Sentimento atual: ${sentimento}`;
+
+      criarCartoes("indices", dados, grupos["Índices Globais"]);
+      criarCartoes("commodities", dados, grupos["Commodities"]);
+      criarCartoes("cambio", dados, grupos["Câmbio"]);
+    }
+
+    carregarDados();
+    setInterval(carregarDados, 60000); // Atualiza a cada 60 segundos
+  </script>
+
+</body>
+</html>
